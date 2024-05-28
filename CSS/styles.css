@@ -1,0 +1,214 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor principal */
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Contenedor para el calendario y el formulario de eventos */
+#calendar-container-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Estilos para los botones de vista del calendario */
+#calendar-views {
+    margin-bottom: 20px;
+}
+
+#calendar-views button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+#calendar-views button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para el calendario */
+#calendar {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#calendar-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px; /* Ajusta esto según sea necesario */
+}
+
+.calendar-annual {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.month-container {
+    flex: 1 1 calc(33% - 20px);
+    margin-bottom: 20px;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 100%;
+}
+
+.days-of-week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #f1f1f1;
+}
+
+.day-header {
+    background-color: #f1f1f1;
+}
+
+.calendar-day {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.calendar-day .day-number {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.calendar-day .events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-size: 12px;
+}
+
+.calendar-day.empty {
+    background-color: #f9f9f9;
+    cursor: default;
+}
+
+.calendar-day.has-event {
+    background-color: #e6f2ff;
+    font-weight: bold;
+}
+
+/* Estilos para el formulario de eventos */
+#event-form {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 25px;
+    width: 38%;
+    margin-left: 15px;
+}
+
+#event-form input,
+#event-form select {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#event-form button {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+#event-form button:hover {
+    background-color: #45a049;
+}
+
+#event-form .update-button {
+    background-color: #4CAF50;
+}
+
+#event-form .update-button:hover {
+    background-color: #45a049;
+}
+
+#event-form .delete-button {
+    background-color: #f44336;
+}
+
+#event-form .delete-button:hover {
+    background-color: #e53935;
+}
+
+/* Estilos para la vista diaria */
+#daily-schedule {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.time-slot {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.event {
+    background-color: #e6f2ff;
+    padding: 2px 5px;
+    margin-left: 10px;
+    border-radius: 3px;
+}
+
+/* Ajustes adicionales para la vista mensual */
+.calendar-monthly {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    width: 100%;
+}
+
+
+
